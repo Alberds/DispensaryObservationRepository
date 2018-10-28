@@ -15,6 +15,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
+Auth::routes(); 
+
+/*Route::group(['middleware' => ['web']], function () {
+
+	Auth::routes();
+
+	Route::get('/', function(){
+		//return redirect('/reestr');
+		 return redirect('/home');
+	}); */
+
 
 Route::get('/home', 'HomeController@index')->name('home');
