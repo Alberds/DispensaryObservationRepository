@@ -14,6 +14,14 @@
                         </div>
                     @endif
 
+<body>
+    <script>
+        
+        alert(+undefined  ); 
+    </script>
+    
+</body>
+
                     You are logged in!
                 </div>
             </div>
